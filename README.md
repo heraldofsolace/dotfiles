@@ -1,10 +1,3 @@
-                                                                    
-      _|              _|          _|_|  _|  _|                      
-  _|_|_|    _|_|    _|_|_|_|    _|          _|    _|_|      _|_|_|  
-_|    _|  _|    _|    _|      _|_|_|_|  _|  _|  _|_|_|_|  _|_|      
-_|    _|  _|    _|    _|        _|      _|  _|  _|            _|_|  
-  _|_|_|    _|_|        _|_|    _|      _|  _|    _|_|_|  _|_|_|    
-                                                                    
 
 # Introduction
 
@@ -16,13 +9,13 @@ Although most of them reside in `$HOME`, with the introduction of XDG standards,
 This is my collection of dotfiles for my Linux system.
 
 # My Linux Configuration
-
-| OS       | Arch Linux |
-| DE       | KDE Plasma |
-| WM       | KWin       |
-| $EDITOR  | neovim     |
-| Terminal | Konsole    |
-| Shell    | Fish       |
+| __________ | ____________ |
+| OS         | Arch Linux   |
+| DE         | KDE Plasma   |
+| WM         | KWin         |
+| $EDITOR    | neovim       |
+| Terminal   | Konsole      |
+| Shell      | Fish         |
 
 # Managing
 
