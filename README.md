@@ -9,13 +9,12 @@ Although most of them reside in `$HOME`, with the introduction of XDG standards,
 This is my collection of dotfiles for my Linux system.
 
 # My Linux Configuration
-| __________ | ____________ |
-| OS         | Arch Linux   |
-| DE         | KDE Plasma   |
-| WM         | KWin         |
-| $EDITOR    | neovim       |
-| Terminal   | Konsole      |
-| Shell      | Fish         |
+**OS**: Arch Linux
+**DE**: KDE Plasma
+**WM**: KWin
+**$EDITOR**: neovim
+**Terminal**: Konsole
+**Shell**: Fish
 
 # Managing
 
