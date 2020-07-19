@@ -1,0 +1,33 @@
+ {
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"],
+            "ignoredRootPaths": ["~"]
+        },
+        "golang": {
+            "command": "gopls",
+            "args": [],
+            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["go"]
+        }
+    },
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": false,
+    "suggest.noselect": false,
+    "highlight.trace.server": "verbose",
+    "todolist.monitor": true,
+    "diagnostic.displayByAle": true,
+    "diagnostic.refreshOnInsertMode": true
+ }

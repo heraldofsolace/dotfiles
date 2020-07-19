@@ -1,0 +1,17 @@
+session_name: base
+start_directory: '~'
+windows:
+    - window_name: fish
+      panes:
+          - shell_command: neofetch
+    - window_name: youtube
+      panes:
+          - mpsyt
+    - window_name: vim
+      panes:
+          - shell_command: vim
+    - window_name: util
+      panes:
+          - shell_command: htop
+          - 
+      layout: main-vertical
