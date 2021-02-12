@@ -18,6 +18,9 @@ set rtp+=~/.config/nvim/vim-plug
 
 call plug#begin('~/.config/nvim/plugins/')
 Plug 'airblade/vim-gitgutter' " A Vim plugin which shows git diff markers in the sign column and stages/previews/undoes hunks and partial hunks (https://github.com/airblade/vim-gitgutter)
+Plug 'tyru/open-browser.vim'
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'alvan/vim-closetag' " Auto close (X)HTML tags (https://github.com/alvan/vim-closetag)
 Plug 'arcticicestudio/nord-vim' " An arctic, north-bluish clean and elegant Vim theme (https://github.com/arcticicestudio/nord-vim)
 Plug 'arecarn/vim-crunch' " A calculator inside Vim (https://github.com/arecarn/vim-crunch)
@@ -28,7 +31,7 @@ Plug 'christoomey/vim-tmux-navigator'  " Seamless navigation between tmux panes 
 Plug 'dart-lang/dart-vim-plugin' " Syntax highlighting for Dart in Vim (https://github.com/dart-lang/dart-vim-plugin)
 Plug 'dense-analysis/ale' " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support - dense-analysis/ale (https://github.com/dense-analysis/ale)
 Plug 'dracula/vim', { 'as': 'dracula' } " 🧛🏻‍♂️ Dark theme for Vim (https://github.com/dracula/vim
-Plug 'fatih/vim-go', { 'for': 'go' } " Go development plugin for Vim (https://github.com/fatih/vim-go)
+Plug 'fatih/vim-go', { 'for': 'go' }  " Go development plugin for Vim (https://github.com/fatih/vim-go)
 Plug 'felipec/notmuch-vim' " Plug-in for vim to use notmuch (https://github.com/felipec/notmuch-vim)
 Plug 'felixhummel/setcolors.vim' " Shameless rip from http://vim (https://github.com/felixhummel/setcolors.vim)
 Plug 'flazz/vim-colorschemes' " one colorscheme pack to rule them all! Contribute to flazz/vim-colorschemes development by creating an account on GitHub (https://github.com/flazz/vim-colorschemes)
@@ -62,8 +65,10 @@ Plug 'ludovicchabant/vim-gutentags'  " A Vim plugin that manages your tag files 
 Plug 'mattn/emmet-vim' " emmet for vim: http://emmet (https://github.com/mattn/emmet-vim)
 Plug 'kristijanhusak/vim-dadbod-ui' " Simple UI for https://github (https://github.com/kristijanhusak/vim-dadbod-ui)
 Plug 'tpope/vim-dotenv' " dotenv (https://github.com/tpope/vim-dotenv)
-Plug 'majutsushi/tagbar' " Vim plugin that displays tags in a window, ordered by scope - majutsushi/tagbar (https://github.com/majutsushi/tagbar)
 Plug 'maxbrunsfeld/vim-yankstack' " A lightweight implementation of emacs&#39;s kill-ring for vim - maxbrunsfeld/vim-yankstack (https://github.com/maxbrunsfeld/vim-yankstack)
+Plug 'puremourning/vimspector', {
+  \ 'do': 'python3 install_gadget.py --all'
+  \ }
 Plug 'mhinz/vim-startify' " 🔗 The fancy start screen for Vim (https://github.com/mhinz/vim-startify)
 Plug 'michaeljsmith/vim-indent-object' " Vim plugin that defines a new text object representing lines of code at the same indent level (https://github.com/michaeljsmith/vim-indent-object)
 Plug 'mileszs/ack.vim' " Vim plugin for the Perl module / CLI script &#39;ack&#39; (https://github.com/mileszs/ack.vim
@@ -72,13 +77,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Intellisense engine for Vim8 &
 Plug 'nicwest/vim-http' " simple vim plugin to make http requests from buffers - nicwest/vim-http (https://github.com/nicwest/vim-http)
 Plug 'rhysd/vim-grammarous' " A powerful grammar checker for Vim using LanguageTool (https://github.com/rhysd/vim-grammarous)
 Plug 'ron89/thesaurus_query.vim' " Multi-language Thesaurus Query and Replacement plugin for Vim/NeoVim - Ron89/thesaurus_query (https://github.com/ron89/thesaurus_query.vim)
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' } " (https://github.com/scrooloose/nerdtree)
 Plug 'skywind3000/asyncrun.vim' " 🚀 Run Async Shell Commands in Vim 8 (https://github.com/skywind3000/asyncrun.vim)
 Plug 'terryma/vim-expand-region' " Vim plugin that allows you to visually select increasingly larger regions of text using the same key combination (https://github.com/terryma/vim-expand-region)
 Plug 'thosakwe/vim-flutter' " Vim commands for Flutter, including hot-reload-on-save and more (https://github.com/thosakwe/vim-flutter)
 Plug 'tpope/vim-bundler' " bundler (https://github.com/tpope/vim-bundler)
-Plug 'tpope/vim-commentary' " commentary (https://github.com/tpope/vim-commentary)
-Plug 'tpope/vim-commentary' " commentary.vim: comment stuff out (https://github.com/tpope/vim-commentary)
+Plug 'tyru/caw.vim'
 Plug 'tpope/vim-dadbod' "  Modern database interface for Vim (https://github.com/tpope/vim-dadbod)
 Plug 'tpope/vim-eunuch' " eunuch (https://github.com/tpope/vim-eunuch)
 Plug 'tpope/vim-fugitive' " fugitive (https://github.com/tpope/vim-fugitive)
@@ -100,6 +105,7 @@ Plug 'liuchengxu/nerdtree-dash' " Extra syntax highlight for nerdtree and vim-de
 Plug 'xolox/vim-notes' " Easy note taking in Vim (https://github.com/xolox/vim-notes)
 Plug 'xuhdev/SingleCompile' " A Vim plugin making it more convenient to compile or run a single source file (https://github.com/xuhdev/SingleCompile)
 Plug 'zirrostig/vim-schlepp' " Vim plugin for easily moving text selections around - zirrostig/vim-schlepp (https://github.com/zirrostig/vim-schlepp)
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 filetype plugin indent on
 
@@ -164,6 +170,8 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
 
+nnoremap <leader>vv :CHADopen<cr>
+nnoremap <leader>cq <cmd>call setqflist([])<cr>
 """ close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -178,8 +186,8 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'nisha'
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep="\uE0C0"
-let g:airline_right_sep="\uE0C2"
+let g:airline_left_sep="\uf036"
+let g:airline_right_sep="\uf038"
 
 
 """ Vimroom
@@ -431,6 +439,8 @@ set statusline^=%{NearestMethodOrFunction()}
 " If you want to show the nearest function in your statusline automatically,
 " you can add the following line to your vimrc
 autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+nnoremap <leader>vi :Vista!!<CR>
+
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
 source ~/.cache/calendar.vim/credentials.vim
@@ -460,7 +470,6 @@ let g:startify_custom_header =
             \ startify#pad(split(system('fortune | cowsay'), '\n'))
 
 
-nnoremap <silent><F9> :TagbarToggle<cr>
 let g:gutentags_project_root = ['Makefile']
 let g:gutentags_cache_dir = "~/.cache/gutentags"
 set statusline+=%{gutentags#statusline()}
@@ -490,3 +499,7 @@ nnoremap <silent> <leader>db :DBUI<cr>
 "" Floaterm
 let g:floaterm_shell="/usr/bin/fish"
 
+let g:vcoolor_map = '<leader><A-e>'
+let g:vcool_ins_rgb_map = '<leader><A-r>'		" Insert rgb color.
+let g:vcool_ins_hsl_map = '<leader><A-h>'		" Insert hsl color.
+let g:vcool_ins_rgba_map = '<leader><A-a>'
